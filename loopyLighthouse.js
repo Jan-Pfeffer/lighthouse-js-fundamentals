@@ -18,11 +18,15 @@ is a multiple of 3, then write your if statement. To verify that it works, consi
 calculating a few multiples of 3 by hand in a notebook (for example, 102, 105, 108, etc.), 
 then making sure they're being replaced with "Loopy" in your output. */
 
-let number = 14
+let number = 9
 let devidedByThree = number / 3
 let devidedByFour = number / 4
 
 
-if (devidedByThree % 1 === 0) {
+if (devidedByFour % 1 === 0 && devidedByThree % 1 === 0) {
+    console.log('LoopyLighthouse');
+} else if (devidedByFour % 1 === 0) {
+    console.log('Lighthouse');
+} else if (devidedByThree % 1 === 0) {
     console.log('Loopy');
 }
