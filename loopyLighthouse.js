@@ -10,3 +10,19 @@ for (num in numbersArray) {
     }
     x++;
 }
+
+/*
+Next, pick a condition you want to start with, for example printing out "Loopy" 
+instead of multiples of 3. Figure out how you're going to check whether a number 
+is a multiple of 3, then write your if statement. To verify that it works, consider 
+calculating a few multiples of 3 by hand in a notebook (for example, 102, 105, 108, etc.), 
+then making sure they're being replaced with "Loopy" in your output. */
+
+let number = 14
+let devidedByThree = number / 3
+let devidedByFour = number / 4
+
+
+if (devidedByThree % 1 === 0) {
+    console.log('Loopy');
+}
