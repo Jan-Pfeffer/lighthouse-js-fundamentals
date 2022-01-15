@@ -1,32 +1,25 @@
-/*Then, start working on your program by 
-writing a loop that prints out all the numbers from 100 to 200, 
-inclusive. Only move on to the next step when that works*/
-let numbersArray = [100, 101, 102, 95, 75, 104, 107, 200, 203]
+let numbersArray = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124,
+    125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152,
+    153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180,
+    181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200
+]
 
 let x = 0
 for (num in numbersArray) {
     if (numbersArray[x] >= 100 && numbersArray[x] <= 200) {
-        console.log(numbersArray[x]);
+        let number = numbersArray[x]
+        let devidedByThree = number / 3
+        let devidedByFour = number / 4
+
+        if (devidedByFour % 1 === 0 && devidedByThree % 1 === 0) {
+            console.log('LoopyLighthouse');
+        } else if (devidedByFour % 1 === 0) {
+            console.log('Lighthouse');
+        } else if (devidedByThree % 1 === 0) {
+            console.log('Loopy');
+        } else {
+            console.log(numbersArray[x]);
+        }
     }
     x++;
-}
-
-/*
-Next, pick a condition you want to start with, for example printing out "Loopy" 
-instead of multiples of 3. Figure out how you're going to check whether a number 
-is a multiple of 3, then write your if statement. To verify that it works, consider 
-calculating a few multiples of 3 by hand in a notebook (for example, 102, 105, 108, etc.), 
-then making sure they're being replaced with "Loopy" in your output. */
-
-let number = 9
-let devidedByThree = number / 3
-let devidedByFour = number / 4
-
-
-if (devidedByFour % 1 === 0 && devidedByThree % 1 === 0) {
-    console.log('LoopyLighthouse');
-} else if (devidedByFour % 1 === 0) {
-    console.log('Lighthouse');
-} else if (devidedByThree % 1 === 0) {
-    console.log('Loopy');
 }
