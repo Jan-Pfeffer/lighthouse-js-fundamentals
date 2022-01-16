@@ -1,9 +1,7 @@
-const attitude = ['north', 'north', 'west', 'west', 'north', 'east', 'north']
-let vertical = 0
-let horizontal = 0
-let loc = []
-
 function finalPosition(attitude) {
+    let vertical = 0
+    let horizontal = 0
+    let loc = []
     for (let direction of attitude) {
         if (direction === "north") {
             vertical = vertical + 1
@@ -18,5 +16,3 @@ function finalPosition(attitude) {
     loc.push(horizontal, vertical)
     return loc;
 }
-
-finalPosition(attitude);
