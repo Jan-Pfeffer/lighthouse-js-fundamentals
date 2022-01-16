@@ -10,9 +10,8 @@ console.log(tenIsEven);
 console.log(elevenIsEven);
 */
 
-const isEven = function(num) {
-    return num % 2 === 0;
-}
+let isEven = (num) => num % 2 === 0
+
 
 console.log(isEven(10));
 console.log(isEven(11));
