@@ -4,10 +4,9 @@ let numbersArray = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 
     181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200
 ]
 
-let x = 0
-for (num in numbersArray) {
-    if (numbersArray[x] >= 100 && numbersArray[x] <= 200) {
-        let number = numbersArray[x]
+numbersArray.forEach(numbersArray => {
+    if (numbersArray >= 100 && numbersArray <= 200) {
+        let number = numbersArray
         let devidedByThree = number / 3
         let devidedByFour = number / 4
 
@@ -18,8 +17,7 @@ for (num in numbersArray) {
         } else if (devidedByThree % 1 === 0) {
             console.log('Loopy');
         } else {
-            console.log(numbersArray[x]);
+            console.log(numbersArray);
         }
     }
-    x++;
-}
+})
