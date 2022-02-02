@@ -9,7 +9,7 @@ let iceCreamFlavours = [
 console.log(iceCreamFlavours);
 
 iceCreamFlavours.push("root beer");
-// Your code below here....
+// Your code below here...
 console.log(iceCreamFlavours);
 console.log(iceCreamFlavours[0]);
 console.log(iceCreamFlavours[5]);
