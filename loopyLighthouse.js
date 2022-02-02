@@ -4,20 +4,23 @@ let numbersArray = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 
     181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200
 ]
 
-numbersArray.forEach(numbersArray => {
-    if (numbersArray >= 100 && numbersArray <= 200) {
-        let number = numbersArray
-        let devidedByThree = number / 3
-        let devidedByFour = number / 4
-
-        if (devidedByFour % 1 === 0 && devidedByThree % 1 === 0) {
-            console.log('LoopyLighthouse');
-        } else if (devidedByFour % 1 === 0) {
-            console.log('Lighthouse');
-        } else if (devidedByThree % 1 === 0) {
-            console.log('Loopy');
-        } else {
-            console.log(numbersArray);
+function loopyLighthouse(range,mutiplyBy,words){
+    numbersArray.forEach(range => {
+        if (numbersArray >= range[0] && numbersArray <= range[1]) {
+            let number = numbersArray
+            let devidedByval = number / mutiplyBy[0]
+            let devidedByval2 = number / mutiplyBy[1]
+            if (devidedByval2 % 1 === 0 && devidedByval % 1 === 0) {
+                console.log(words[0]);
+            } else if (devidedByval2 % 1 === 0) {
+                console.log(words[1]);
+            } else if (devidedByval % 1 === 0) {
+                console.log(words[0]+words[2]);
+            } else {
+                console.log(numbersArray);
+            }
         }
-    }
-})
+    })
+}
+
+loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);

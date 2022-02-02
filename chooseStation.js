@@ -2,7 +2,7 @@ let x = 0;
 let deemedAppropriate = []
 
 const stations = [
-    ['Big Bear Donair', 10, 'restaurant'],
+    ['Big Bear Donair', 50, 'restaurant'],
     ["Bright Lights Elementary", 50, 'school'],
     ['Moose Mountain Community Centre', 10, 'community centre']
 ];
